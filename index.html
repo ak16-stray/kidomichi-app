@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>毎朝寄道新聞</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Yu Gothic", sans-serif;
+      background: #f5f1e8;
+      color: #29251f;
+    }
+
+    header {
+      background: #29251f;
+      color: white;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      letter-spacing: .08em;
+    }
+
+    header p {
+      margin: 0;
+      opacity: .8;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 28px auto;
+      padding: 0 18px 50px;
+    }
+
+    .date {
+      font-size: 14px;
+      opacity: .65;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 27px;
+      line-height: 1.45;
+      margin: 8px 0 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 26px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.07);
+    }
+
+    .card p {
+      font-size: 17px;
+      line-height: 2;
+      margin: 0 0 18px;
+    }
+
+    .quote {
+      border-left: 4px solid #29251f;
+      padding: 8px 0 8px 18px;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 24px 0;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      background: #29251f;
+      color: white;
+      padding: 12px 20px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      opacity: .55;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 23px; }
+      h2 { font-size: 23px; }
+      .card { padding: 20px; }
+      .card p { font-size: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>毎朝寄道新聞</h1>
+    <p>まっすぐ行かずに、ちょっと寄道。</p>
+  </header>
+
+  <main>
+
+    <div class="date">9月8日号</div>
+
+    <h2>橋を架けるということ</h2>
+
+    <section class="card">
+
+      <p>
+        道と道をつなぐ橋は、単なる構造物ではない。
+        向こう岸へ渡るためには、まず「向こう側がある」と
+        想像しなければならない。
+      </p>
+
+      <p>
+        人と人の間にも、国と国の間にも、見えない川が流れている。
+        価値観が違えば、簡単には渡れない。
+        それでも橋を架けようとする人がいる。
+      </p>
+
+      <div class="quote">
+        橋とは、違いを消すものではなく、
+        違いを抱えたまま渡れる場所なのかもしれない。
+      </div>
+
+      <p>
+        毎朝、少しだけ寄道をして考えてみる。
+        今日のニュースの向こう側には、
+        どんな景色があるのだろう。
+      </p>
+
+      <button onclick="alert('寄道してくれて、ありがとうございます！')">
+        今日も寄道する
+      </button>
+
+    </section>
+
+    <footer>
+      © 毎朝寄道新聞
+    </footer>
+
+  </main>
+
+</body>
+</html>
