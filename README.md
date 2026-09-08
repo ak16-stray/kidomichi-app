@@ -1,0 +1,1 @@
+# kidomichi-app
