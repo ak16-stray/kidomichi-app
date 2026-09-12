@@ -1,0 +1,25 @@
+name: Note draft test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create test article file
+        run: |
+          mkdir -p note-drafts
+          cat > note-drafts/test-2026-09-12.md <<'EOF'
+# 毎朝寄道新聞 9月12日号
+
+これはGitHub Actionsからnoteへの下書き作成を試すためのテスト記事です。
+
+まずは自動化の第一歩。うまくいけば、次はnoteへの下書き投入までつなぎます。
+EOF
+
+      - name: Show test article
+        run: cat note-drafts/test-2026-09-12.md
